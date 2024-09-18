@@ -1,6 +1,4 @@
 var newWindow = window.open("", "_blank", "width=800,height=600");
-
-// Inject HTML into the new window
 var prepList = document.getElementsByClassName('recipe__cook-and-prep list list--horizontal')[0].innerHTML;
 var ingredients = document.getElementsByClassName('recipe__ingredients')[0].innerHTML;
 var steps = document.getElementsByClassName('recipe__method-steps')[0].innerHTML;
@@ -63,5 +61,4 @@ svg { display: none; }
 
 newWindow.document.write(innerHTML);
 
-// Optionally close the document to prevent further modifications
 newWindow.document.close();
